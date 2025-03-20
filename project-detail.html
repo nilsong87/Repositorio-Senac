@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto - Repositório Senac</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <script>
+        // Verifica se o usuário está logado
+        document.addEventListener('DOMContentLoaded', function() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+            if (!isLoggedIn) {
+                alert("Você precisa estar logado para acessar esta página.");
+                window.location.href = 'index.html'; // Redireciona para a página inicial
+            }
+        });
+    </script>
+    <header>
+        <div class="logo">
+            <img src="images/senac-logo.png" alt="Logo Senac">
+            <h1>Repositório de Projetos Senac</h1>
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="projects.html">Projetos</a>
+            <a href="about.html">Sobre</a>
+            <a href="contact.html">Contato</a>
+            <!-- Links para navegação entre páginas restritas -->
+            <a href="add-project.html">Adicionar Projeto</a>
+            <a href="projects.html">Ver Projetos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="project-detail">
+            <!-- Detalhes do projeto serão carregados aqui via JavaScript -->
+        </section>
+        <!-- Botão de Logout -->
+        <button id="logoutButton" style="display: none;">Sair</button>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Senac BA (Nilson Gomes). Todos os direitos reservados.</p>
+            <nav>
+                <a href="https://www.senac.br">Site Oficial</a>
+                <a href="#">Política de Privacidade</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
+

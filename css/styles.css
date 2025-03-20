@@ -1,0 +1,615 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+/* Header Fixo no Topo */
+header {
+    background-color: #0056A6;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 80px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 100px 20px 80px; /* Padding-top para o header e padding-bottom para o footer */
+    background-color: #F4F4F4;
+    min-height: 100vh; /* Garante que o main ocupe pelo menos a altura da tela */
+}
+
+/* Footer Fixo no Final */
+footer {
+    background-color: #0056A6;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+}
+
+footer .footer-content p {
+    flex: 1; /* Ocupa o espaço disponível e centraliza o texto */
+    text-align: center; /* Centraliza o texto do copyright */
+    margin: 0; /* Remove margens padrão */
+    margin-left: -80px;
+}
+
+footer nav {
+    margin-left: auto; /* Empurra a nav para o canto direito */
+    margin-right: -300px;
+}
+
+footer nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da Página Inicial */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    color: #0056A6;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.highlights {
+    text-align: center;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlights h2 {
+    color: #0056A6;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.highlight-projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilos para a grade de projetos */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #0056A6;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-card a:hover {
+    background-color: #0056A6;
+}
+
+/* Estilos do Modal de Login/Registro */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    color: #0056A6;
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056A6;
+}
+
+.modal-content p {
+    margin-top: 10px;
+    color: #666666;
+}
+
+.modal-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+}
+
+.close {
+    color: #AAAAAA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000000;
+}
+
+/* Estilos para o Formulário de Registro */
+#registerFormContainer {
+    display: none; /* Escondido por padrão */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .highlight-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer nav {
+        margin-top: 10px;
+    }
+}
+
+/* Estilos para Outras Páginas (Sobre, Contato, Projetos) */
+.about, .contact, .projects-grid {
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about h2, .contact h2, .projects-grid h2 {
+    color: #0056A6;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+}
+
+.contact form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056A6;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilos para a seção de detalhes do projeto */
+.project-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+.project-detail h2 {
+    color: #0056A6;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-detail img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.project-detail p {
+    font-size: 1.1em;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.project-detail .project-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.project-detail .project-info div {
+    flex: 1;
+    min-width: 200px;
+    background-color: #F9F9F9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail .project-info h3 {
+    color: #0056A6;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project-detail .project-info p {
+    font-size: 1em;
+    color: #333333;
+    margin: 0;
+}
+
+.project-detail .project-files {
+    margin-top: 20px;
+}
+
+.project-detail .project-files h3 {
+    color: #0056A6;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.project-detail .project-files ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-detail .project-files li {
+    background-color: #F9F9F9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail .project-files a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.project-detail .project-files a:hover {
+    text-decoration: underline;
+}
+
+.project-detail .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.project-detail .back-button:hover {
+    background-color: #0056A6;
+}
+
+/* Estilo do botão de logout */
+#logoutButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: auto; /* Empurra o botão para o canto direito */
+    margin-right: 40px; /* Adiciona um espaçamento à direita */
+}
+
+#logoutButton:hover {
+    background-color: #cc0000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os links e o botão */
+}
+
+/* Estilos para o Formulário de Adicionar Projeto */
+#addProjectForm {    
+    
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#addProjectForm input[type="text"],
+#addProjectForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#addProjectForm textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+#addProjectForm input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    background-color: #F9F9F9;
+    font-size: 1em;
+}
+
+#addProjectForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addProjectForm button:hover {
+    background-color: #0056A6;
+}
+
+/* Estilos para os labels (opcional) */
+#addProjectForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Estilos para o campo de upload de pasta */
+#addProjectForm input[type="file"][webkitdirectory] {
+    background-color: #F9F9F9;
+    border: 1px dashed #DDDDDD;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#addProjectForm input[type="file"][webkitdirectory]:hover {
+    background-color: #F1F1F1;
+}
+
+/* Estilos para mensagens de erro ou sucesso (opcional) */
+#addProjectForm .error-message {
+    color: #ff4d4d;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+#addProjectForm .success-message {
+    color: #28a745;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para a seção de filtros */
+.filters {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.filters h2 {
+    color: #0056A6;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#filterForm {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#filterForm select {
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #F9F9F9;
+    flex: 1;
+    min-width: 150px;
+}
+
+#filterForm button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filterForm button:hover {
+    background-color: #0056A6;
+}
+
