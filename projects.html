@@ -8,12 +8,12 @@
 </head>
 <body>
     <script>
-        // Verifica se o usuário está logado
+        
         document.addEventListener('DOMContentLoaded', function() {
             const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
             if (!isLoggedIn) {
                 alert("Você precisa estar logado para acessar esta página.");
-                window.location.href = 'index.html'; // Redireciona para a página inicial
+                window.location.href = 'index.html'; 
             }
         });
     </script>
@@ -27,7 +27,7 @@
             <a href="projects.html">Projetos</a>
             <a href="about.html">Sobre</a>
             <a href="contact.html">Contato</a>
-            <!-- Links para navegação entre páginas restritas -->
+            
             <a href="add-project.html">Adicionar Projeto</a>
             <a href="project-detail.html">Detalhes do Projeto</a>
         </nav>
@@ -52,7 +52,7 @@
             </form>
         </section>
         <section class="projects-grid">
-            <!-- Projetos serão carregados aqui via JavaScript -->
+            
         </section>
     </main>
     <footer>

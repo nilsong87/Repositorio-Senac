@@ -1,4 +1,4 @@
-/* Estilos Gerais */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,6 @@ body {
     color: #333333;
 }
 
-/* Header Fixo no Topo */
 header {
     background-color: #0056A6;
     color: #FFFFFF;
@@ -43,14 +42,13 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Conteúdo Principal */
 main {
-    padding: 100px 20px 80px; /* Padding-top para o header e padding-bottom para o footer */
+    padding: 100px 20px 80px; 
     background-color: #F4F4F4;
-    min-height: 100vh; /* Garante que o main ocupe pelo menos a altura da tela */
+    min-height: 100vh; 
 }
 
-/* Footer Fixo no Final */
+
 footer {
     background-color: #0056A6;
     color: #FFFFFF;
@@ -66,18 +64,18 @@ footer .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center; /* Alinha os itens verticalmente ao centro */
+    align-items: center; 
 }
 
 footer .footer-content p {
-    flex: 1; /* Ocupa o espaço disponível e centraliza o texto */
-    text-align: center; /* Centraliza o texto do copyright */
-    margin: 0; /* Remove margens padrão */
+    flex: 1; 
+    text-align: center; 
+    margin: 0; 
     margin-left: -80px;
 }
 
 footer nav {
-    margin-left: auto; /* Empurra a nav para o canto direito */
+    margin-left: auto; 
     margin-right: -300px;
 }
 
@@ -91,7 +89,7 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
-/* Estilos da Página Inicial */
+
 .intro {
     text-align: center;
     padding: 40px 20px;
@@ -133,7 +131,7 @@ footer nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Estilos para a grade de projetos */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -192,7 +190,7 @@ footer nav a:hover {
     background-color: #0056A6;
 }
 
-/* Estilos do Modal de Login/Registro */
+
 .modal {
     display: none;
     position: fixed;
@@ -267,12 +265,12 @@ footer nav a:hover {
     color: #000000;
 }
 
-/* Estilos para o Formulário de Registro */
+
 #registerFormContainer {
-    display: none; /* Escondido por padrão */
+    display: none; 
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .highlight-projects {
         flex-direction: column;
@@ -299,7 +297,7 @@ footer nav a:hover {
     }
 }
 
-/* Estilos para Outras Páginas (Sobre, Contato, Projetos) */
+
 .about, .contact, .projects-grid {
     padding: 20px;
     background-color: #FFFFFF;
@@ -345,7 +343,7 @@ footer nav a:hover {
     gap: 20px;
 }
 
-/* Estilos para a seção de detalhes do projeto */
+
 .project-detail {
     max-width: 800px;
     margin: 0 auto;
@@ -455,7 +453,7 @@ footer nav a:hover {
     background-color: #0056A6;
 }
 
-/* Estilo do botão de logout */
+
 #logoutButton {
     background-color: #ff4d4d;
     color: white;
@@ -463,8 +461,8 @@ footer nav a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: auto; /* Empurra o botão para o canto direito */
-    margin-right: 40px; /* Adiciona um espaçamento à direita */
+    margin-left: auto; 
+    margin-right: 40px; 
 }
 
 #logoutButton:hover {
@@ -474,10 +472,10 @@ footer nav a:hover {
 header nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* Espaçamento entre os links e o botão */
+    gap: 20px; 
 }
 
-/* Estilos para o Formulário de Adicionar Projeto */
+
 #addProjectForm {    
     
     max-width: 600px;
@@ -530,7 +528,7 @@ header nav {
     background-color: #0056A6;
 }
 
-/* Estilos para os labels (opcional) */
+
 #addProjectForm label {
     display: block;
     margin-bottom: 5px;
@@ -538,7 +536,7 @@ header nav {
     color: #333333;
 }
 
-/* Estilos para o campo de upload de pasta */
+
 #addProjectForm input[type="file"][webkitdirectory] {
     background-color: #F9F9F9;
     border: 1px dashed #DDDDDD;
@@ -551,7 +549,7 @@ header nav {
     background-color: #F1F1F1;
 }
 
-/* Estilos para mensagens de erro ou sucesso (opcional) */
+
 #addProjectForm .error-message {
     color: #ff4d4d;
     font-size: 0.9em;
@@ -566,7 +564,7 @@ header nav {
     margin-bottom: 15px;
 }
 
-/* Estilos para a seção de filtros */
+
 .filters {
     background-color: #FFFFFF;
     padding: 20px;
