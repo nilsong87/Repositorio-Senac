@@ -653,7 +653,7 @@ header nav {
     }
 
     header nav a {
-        margin-right: 10px;
+        margin-right: 30px;
         font-size: 0.9em;
     }
 
@@ -740,5 +740,21 @@ header nav {
         font-size: 0.9em;
         padding: 8px 16px;
     }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.8em;
+        margin-left: 40px;
+        
+    }
+
+    footer nav {
+        margin-top: 10px;
+        margin-right: 160px;
+        font-size: 0.8em;
+        
+    }
+
 }
 
