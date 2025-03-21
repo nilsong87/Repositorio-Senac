@@ -606,12 +606,12 @@ header nav {
         flex-direction: column;
         text-align: center;
         font-size: 0.8em;
-        margin-left: 20px;
+        
     }
 
     footer nav {
         margin-top: 10px;
-        margin-right: 150px;
+        margin-right: 300px;
         font-size: 0.8em;
         
     }
@@ -637,16 +637,12 @@ header nav {
 
     #addProjectForm input[type="text"],
     #addProjectForm textarea {
-        font-size: 0.9em;
-        width: 400px;
-        
-    }
-
-    
+        font-size: 0.9em;    
+        width: 550px;    
+    } 
 
     #addProjectForm button {
         font-size: 1em;
-        width: 425px;
     }
 }
 
@@ -697,10 +693,11 @@ header nav {
     #addProjectForm input[type="text"],
     #addProjectForm textarea {
         font-size: 0.8em;
+        width: 400px;
     }
 
     #addProjectForm button {
-        font-size: 0.9em;
+        font-size: 0.9em;        
     }
 
     .filters h2 {
