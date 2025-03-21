@@ -270,34 +270,6 @@ footer nav a:hover {
     display: none; 
 }
 
-
-@media (max-width: 768px) {
-    .highlight-projects {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .modal-content {
-        width: 90%;
-        margin: 20% auto;
-    }
-
-    footer .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    footer nav {
-        margin-top: 10px;
-    }
-}
-
-
 .about, .contact, .projects-grid {
     padding: 20px;
     background-color: #FFFFFF;
@@ -342,7 +314,6 @@ footer nav a:hover {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-
 
 .project-detail {
     max-width: 800px;
@@ -549,7 +520,6 @@ header nav {
     background-color: #F1F1F1;
 }
 
-
 #addProjectForm .error-message {
     color: #ff4d4d;
     font-size: 0.9em;
@@ -563,7 +533,6 @@ header nav {
     margin-top: -10px;
     margin-bottom: 15px;
 }
-
 
 .filters {
     background-color: #FFFFFF;
@@ -609,5 +578,170 @@ header nav {
 
 #filterForm button:hover {
     background-color: #0056A6;
+}
+
+/* Media Queries para telas de 768px */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header nav a {
+        margin-right: 20px;
+    }
+
+    main {
+        padding: 140px 20px 80px; 
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.8em;
+        margin-left: 20px;
+    }
+
+    footer nav {
+        margin-top: 10px;
+        margin-right: 150px;
+        font-size: 0.8em;
+        
+    }
+
+    .highlight-projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+
+    #addProjectForm {
+        padding: 15px;
+    }
+
+    #addProjectForm input[type="text"],
+    #addProjectForm textarea {
+        font-size: 0.9em;
+        width: 400px;
+        
+    }
+
+    
+
+    #addProjectForm button {
+        font-size: 1em;
+        width: 425px;
+    }
+}
+
+/* Media Queries para telas de 480px */
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    header nav a {
+        margin-right: 10px;
+        font-size: 0.9em;
+    }
+
+    main {
+        padding: 160px 10px 80px; 
+    }
+
+    .intro h2 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    .highlights h2 {
+        font-size: 1.8em;
+    }
+
+    .project-card h3 {
+        font-size: 1.2em;
+    }
+
+    .project-card p {
+        font-size: 0.9em;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 25% auto;
+    }
+
+    #addProjectForm {
+        padding: 10px;
+    }
+
+    #addProjectForm input[type="text"],
+    #addProjectForm textarea {
+        font-size: 0.8em;
+    }
+
+    #addProjectForm button {
+        font-size: 0.9em;
+    }
+
+    .filters h2 {
+        font-size: 1.5em;
+    }
+
+    #filterForm select {
+        font-size: 0.9em;
+    }
+
+    #filterForm button {
+        font-size: 0.9em;
+    }
+
+    .project-detail h2 {
+        font-size: 1.8em;
+    }
+
+    .project-detail p {
+        font-size: 1em;
+    }
+
+    .project-detail .project-info h3 {
+        font-size: 1.1em;
+    }
+
+    .project-detail .project-info p {
+        font-size: 0.9em;
+    }
+
+    .project-detail .project-files h3 {
+        font-size: 1.3em;
+    }
+
+    .project-detail .project-files a {
+        font-size: 0.9em;
+    }
+
+    #logoutButton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
 }
 
